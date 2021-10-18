@@ -1,20 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+    <?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/ Register Form</title>
-    <link rel="stylesheet" href="./style//style.css">
-</head>
+    include('head.php');
+    $errors = [];
 
-<body>
-    <div class="page-wrapper">
-        <div class="well">
+    ?>
 
+    <h2>Register</h2>
+
+    <?php displayErrors($errors); ?>
+
+    <form action="register.php" method="POST">
+        <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" placeholder="First_name" />
         </div>
-    </div>
-</body>
 
-</html>
+        <div class="form-group">
+            <label for="lasst_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Last_name" />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Email" />
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="first_name" id="password" placeholder="Password" />
+        </div>
+
+        <div class="form-group">
+            <label for="confirm">Confirm Password</label>
+            <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" />
+        </div>
+
+        <div class="button-wrapper">
+            <button class="btn btn-primary">Register</button>
+        </div>
+
+        <p>Already have an account? <a href="login.php">Log in</a> </p>
+
+    </form>
+    <?php
+    include('foot.php'); ?>
