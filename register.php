@@ -1,9 +1,9 @@
     <?php
-
     include('head.php');
     $errors = [];
-
     ?>
+
+
 
     <h2>Register</h2>
 

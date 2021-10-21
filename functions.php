@@ -4,7 +4,7 @@ function dnd($data)
 {   //dnd: dump and die
     echo "<pre>";
     var_dump($data);
-    echo "</pre>>";
+    echo "</pre>";
     die;
 }
 
